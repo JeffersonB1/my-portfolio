@@ -58,10 +58,13 @@ header nav ul li a {
     width: 50%;
 
 }
+/*This img is going to be applied to every image in the html*/
  img{
     max-width: 100%;
 }
-
+/*This is the container of the picture
+and the picture is going to take the size 
+that we set here*/
 .refpicture{
     width:10%;
 }
