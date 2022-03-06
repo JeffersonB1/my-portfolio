@@ -47,34 +47,133 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/*This affects the box that contain the
+picture and box(h2 and paragrap) of the header*/
 .main-about-me{
     display:flex;
     flex-wrap:wrap;
     align-items: flex-start;
 }
 .mypicture{
-    margin-left: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
     padding-bottom: 50px;
     width: 50%;
+
+
 
 }
 /*This img is going to be applied to every image in the html*/
  img{
     max-width: 100%;
+    
+}
+
+/*Container of the paragragrap and h2 
+of the header*/
+.aboutext{
+    width: 35%;
+    text-align: center;
+    margin:5%;
+    color: #020202;
+    font-size: 22px;
+    line-height: 1.5;
+    
+}
+.textsections{
+    text-align: center;
+    font-size: 20px;
+   
+}
+.title-border{
+     padding-bottom: 20px;
+     text-align: center;
+     margin:0 auto 35px auto;
+     width: 50%;
+     font-size: 36px;
+     color:#492e05;
+     border-bottom: 3px solid;
+    
+    }
+.projects-done{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.project{
+    margin:50px;
+    flex:1;
+
+    
 }
 /*This is the container of the picture
 and the picture is going to take the size 
 that we set here*/
-.refpicture{
-    width:10%;
-}
+.project-pictures{
+    margin-left: 0px;
+    padding-bottom: 20px;
+    width: 100%;  
 
-.aboutext{
-    width: 35%;
+    
+}
+a img:hover{
+    transform: scale(1.2);  
+}
+a img{
+    transition:all 0.5s ease;
+}
+div h3{
     text-align: center;
-    margin: 3.5%;
-    color: #020202;
-    font-size: 22px;
-    line-height: 1.2;
 }
 
+ /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+ @media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position:relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+      footer h2, footer div {
+        text-align: center;
+        width: 100%;
+      }
+    }
+    /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+
+
+  }
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .aboutext{
+        width: 35%;
+        text-align: center;
+        margin:5%;
+        color: #020202;
+        font-size: 16px;
+        line-height: 1.5;
+  }
+  section h2{
+    transform: scale(1.2); 
+  }
+}
